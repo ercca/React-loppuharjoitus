@@ -13,6 +13,6 @@ test('test smaller than 1', () => {
     render(<JokeCount />);
     const input = screen.getByTestId('count');
 
-    // userEvent.type(input, '-5');
+    userEvent.type(input, '-5');
     expect(input).toHaveValue('5');
 });
