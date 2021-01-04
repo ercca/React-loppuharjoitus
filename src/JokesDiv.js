@@ -32,13 +32,15 @@ const JokesDiv = () => {
                 <div style={{
                     width: '680px'
                     }}>
-                    {CheckArray()
-                    ? 
-                        jokes.map((y) =>
-                        {return (<p key={y.id}>{y.joke}</p>);})
-                    :
-                        <><br/><p>No jokes fetched.</p></>
-                    }
+                    <ul>
+                        {CheckArray()
+                        ? 
+                            jokes.map((y) =>
+                            {return (<li style={{margin: '5px'}} key={y.id}>{y.joke}</li>);})
+                        :
+                            <><br/><p>No jokes fetched.</p></>
+                        }
+                    </ul>
                 </div>
 
                 <JokesCounter />
