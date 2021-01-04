@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import JokesCounter from './JokesCounter';
 import useStore from './useStore';
 

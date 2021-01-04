@@ -56,6 +56,7 @@ const FetchButton = () => {
         adduniqueIdarray(jokes)
       }
       CheckUniqueJokes();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [jokes]);
 
     
