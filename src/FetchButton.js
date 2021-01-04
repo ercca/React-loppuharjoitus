@@ -6,7 +6,7 @@ const FetchButton = () => {
     const [errortxt, setErrortxt] = useState();
 
     const LoadJokes = () => {
-        let base_url = "http://api.icndb.com/jokes/random/";
+        let base_url = "https://api.icndb.com/jokes/random/";
         if(chosenCategory === 'all' & searchId === '')
         {
           fetch(base_url + `${count}?firstName=${firstName}&lastName=${lastName}`)
@@ -30,7 +30,7 @@ const FetchButton = () => {
           })
         }
         else if (searchId !== '') {
-          fetch(`http://api.icndb.com/jokes/${searchId}`)
+          fetch(`https://api.icndb.com/jokes/${searchId}`)
           .then((resp) => {
             return resp.json();
           })

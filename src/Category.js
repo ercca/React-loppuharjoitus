@@ -7,7 +7,7 @@ const Category = () => {
 
     useEffect(() => {
         const fetchCategories = () => {
-            let base_url = "http://api.icndb.com/categories";
+            let base_url = "https://api.icndb.com/categories";
             fetch(base_url)
             .then((resp) => {
               return resp.json();
